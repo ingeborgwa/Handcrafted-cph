@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="./main.js" defer ></script>
+</head>
+<body>
+    <header>
+    <nav>
+        <h2>Handcrafted cph</h2>
+        <ul>
+            <li id="search" > 
+                <input type="text" placeholder="Søk...">
+            </li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li class="cart">
+                <a href="./cart.html">
+                    <ion-icon name="basket"></ion-icon>Shopping cart<span>0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="decoration-line"></div>
+
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUKT</h5>
+            <h5 class="price">PRIS</h5>
+            <h5 class="quantity">ANTALL</h5>
+            <h5 class="toatl">TOTAL</h5>
+        </div>  
+        <div class="products"></div>
+    </div>
+
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>     
+</body>
+</html>
+

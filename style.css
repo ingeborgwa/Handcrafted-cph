@@ -1,0 +1,290 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+    
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+
+.frontpage{
+    background-image: url(./img/forside.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-weight: 100;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 920px; */
+    padding: 100px;
+    
+}
+
+/*-------NAV------*/
+
+
+header {
+    width: 920px;
+    height: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.decoration-line{
+    border-bottom: 1px solid black;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 120px;
+}
+
+h2{
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 200px;
+}
+
+.frontpage a {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+} 
+
+
+.frontpage a:hover{
+    font-size: 25px;
+    bottom: 50px;
+    opacity: 1;
+    padding: 10px;
+}
+
+span{
+    padding: 5px;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a{
+    color: black;
+    padding: 5px;
+    /* background-color: #fff; */
+    text-decoration: none;
+}
+
+.cart ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.cart a{
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* #search{
+    width: 19vw;
+    height: 22px;
+    margin-top: 4px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+} */
+
+
+/*-------PRODUKTLISTE------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.img-size{
+    width: 200px;
+    /* border: 1px solid black; */
+
+}
+
+
+.image{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+}
+
+
+.add-cart {
+    color: #b58950;
+    position: absolute;
+    width: 100%;
+    background-color: #171f32;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3, 
+.image:hover .cart4 {
+    bottom: 5px;
+    opacity: 1;
+    padding: 10px;
+    text-decoration: none;
+} 
+
+
+
+/*-------HANDEKURV------*/
+
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.quantity{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.total{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products{
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+
+.basketTotalContainer{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+/*-------FOOTER------*/
+
+.footer-container{
+    display: grid;
+    align-items: top;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+    padding-left: 100px;
+}
+
+.some-icon{
+    height: 20px;
+    padding: 10px;
+}
+
+.footer-li{
+    background-color: rgb(0, 51, 51);
+    display: grid;
+    padding-bottom:10px;
+}
+
+.footer-li a{
+    color: whitesmoke;
+}
+
+.footer-li a:hover{
+    color:rgb(255, 102, 51);
+}
